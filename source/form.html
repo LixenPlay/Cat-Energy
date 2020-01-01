@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile-ion.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+            <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Подбор программы Кэт энерджи</h1>
+
+      <section class="title-form">
+        <div class="container">
+          <h1 class="title-form__title">Подбор программы</h1>
+          <p class="title-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+      </section>
+
+      <section class="section-form">
+          <form action="https://echo.htmlacademy.ru" class="section-form__form profile" method="get">
+            <div class="profile__wrapper">
+
+              <div class="profile__fields profile__fields--personal">
+                <ul class="profile__list block">
+                  <li class="profile__item">
+                    <label for="personal-name" class="profile__label--personname">Имя:*</label>
+                    <input type="text" class="profile__input-text--personname" id="personal-name" name="personname" placeholder="Барсик">
+                  </li>
+                  <li class="profile__item">
+                    <label for="personal-weight" class="profile__label--weight">Вес (кг):*</label>
+                    <input type="text" class="profile__input-text--weight" id="personal-weight" name="weight" placeholder="7">
+                  </li>
+                  <li class="profile__item">
+                    <label for="personal-age" class="profile__label--age">Возраст (лет):</label>
+                    <input type="text" class="profile__input-text--age" id="personal-age" name="age" placeholder="7">
+                  </li>
+                </ul>
+              </div>
+
+              <div class="profile__fields profile__fields--contacts">
+                <ul class="profile__list block">
+                  <li class="profile__item">
+                    <input class="profie__input-radio visually-hidden" type="radio" name="mass" value="sliming" checked>
+                    Похудение
+                  </li>
+                  <li class="profile__item">
+                    <input class="profile__input-radio visually-hidden" type="radio" name="mass" value="mass-gain">
+                    Набор массы
+                  </li>
+                  <li class="profile__item">
+                    <input class="profile__input-radio visually-hidden" type="radio" name="mass" value="do-not">
+                    Не знаю (Нужен ваш совет)
+                  </li>
+                </ul>
+              </div>
+
+              <fieldset class="profile__fields profile__fields--owner">
+                <legend class="profile__title">Контактные данные(владельца кота)</legend>
+                <ul class="profile__list block">
+                  <li class="profile__item">
+                    <label for="owner-email" class="profile__label--email">E-mail:*</label>
+                    <input type="text" class="profile__input-text--email" id="owner-email" name="email" placeholder="kuklachev@gmail.com">
+                  </li>
+                  <li class="profile__item">
+                    <label for="owner-telefon" class="profile__label--telefon">Телефон:*</label>
+                    <input type="text" class="profile__input-text--telefon" id="owner-telefon" name="telefon" placeholder="8 (960) 900-60-90">
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="profile__fields profile__fields--coments">
+                <legend class="profile__title">Дополнительно</legend>
+                <textarea class="profile__textarea" placeholder="Расскажите обо всех повадках кота" name="comments"></textarea>
+              </fieldset>
+
+              <fieldset class="profile__fields profile__fields--additionally">
+                <legend class="profile__title">Дополнительно</legend>
+                <ul class="profile__list block">
+                  <li class="profile__item">
+                    <input class="profile__input-checkbox visually-hidden" type="checkbox" name="sweetener" checked>
+                    Сахарозаменитель
+                  </li>
+                  <li class="profile__item">
+                    <input class="profile__input-checkbox visually-hidden" type="checkbox" name="drinking-water">
+                    Питьевая вода
+                  </li>
+                  <li class="profile__item">
+                    <input class="profile__input-checkbox visually-hidden" type="checkbox" name="milk">
+                    Молоко
+                  </li>
+                  <li class="profile__item">
+                    <input class="profile__input-checkbox visually-hidden" type="checkbox" name="vitamins">
+                    Витамины
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="profile__fields profile__fields--button">
+                <button class="profile__button" type="submit">Отправить заявку</button>
+                <p class="profile__required-fields">* — Обязательные поля</p>
+              </div>
+
+            </div>
+          </form>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__footer">
+            <img class="logo__footer--logo-image" src="img/logo-mobile-ion.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Фейсбук</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="http://htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__link-logo" href="http://htmlacademy.ru"><svg class="copyright__logo" width="60" height="80"></svg></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
