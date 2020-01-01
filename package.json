@@ -1,0 +1,27 @@
+{
+  "name": "Cat-Energy",
+  "version": "1.0.0",
+  "description": "* Студент: [Ion]. * Наставник: [Denis].",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LixenPlay/Cat-Energy.git"
+  },
+  "keywords": [],
+  "author": "Ion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LixenPlay/Cat-Energy/issues"
+  },
+  "homepage": "https://github.com/LixenPlay/Cat-Energy#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  }
+}
